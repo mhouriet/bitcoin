@@ -362,8 +362,7 @@ void BitcoinGUI::setClientModel(ClientModel *clientModel)
 
         // Create system tray menu (or setup the dock menu) that late to prevent users from calling actions,
         // while the client has not yet fully loaded
-        if(trayIcon)
-            createTrayIconMenu();
+		createTrayIconMenu();
 
         // Keep up to date with client
         setNumConnections(clientModel->getNumConnections());
